@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>عيد ميلاد سعيد 🎉</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body dir="rtl">
+
+  <!-- مشغل الأغنية تلقائي (YouTube مخفي) -->
+  <iframe width="0" height="0"
+    src="https://www.youtube.com/embed/qUo6Xx2sJjU?autoplay=1&loop=1&playlist=qUo6Xx2sJjU"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <header class="topbar">
+    <div class="title">عيد ميلاد سعيد!</div>
+    <button id="surprise-btn">افتح المفاجأة 🎁</button>
+  </header>
+
+  <main class="stage">
+    <section class="card">
+      <h1 id="hero-line">لشخص غالي جدًا...</h1>
+      <p id="subline" class="typewriter"></p>
+
+      <div class="balloons">
+        <div class="balloon b1"></div>
+        <div class="balloon b2"></div>
+        <div class="balloon b3"></div>
+        <div class="balloon b4"></div>
+        <div class="balloon b5"></div>
+      </div>
+
+      <div class="cta-row">
+        <button id="open-letter">افتح الرسالة 💌</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- نافذة المفاجأة -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close" id="close-modal">✕</button>
+      <h2>مفاجأة خاصة 🎉</h2>
+      <div class="present">
+        <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=800&q=60" alt="هدية">
+        <div class="message" id="surprise-message"></div>
+      </div>
+      <button id="confetti-burst">اطلق الاحتفال! 🎆</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
